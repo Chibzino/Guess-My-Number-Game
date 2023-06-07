@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-left: 100px;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+.play-btn {
+  border-radius: 5px;
+  width: 200px;
+  height: 60px;
+  font-size: 15px;
+  font-family: "Press Start 2P", sans-serif;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #eee;
+}
+.play-btn:hover {
+  color: white;
+  background-color: #222;
+  transition: 0.5s;
+}
+
+.my-number {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+.number-range {
+  font-size: 20px;
+  color: white;
+}
+
+.middle {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.number {
+  font-family: "Press Start 2P", sans-serif;
+  background: #eee;
+  color: #333;
+  font-size: 3rem;
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  border-radius: 4rem;
+}
+
+.guess-check {
+  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.guess-check input {
+  height: 110px;
+  width: 250px;
+  background-color: #222;
+  border-style: solid;
+  border-width: 5px;
+  margin-bottom: 10px;
+  color: #eee;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+.guess-check button {
+  height: 60px;
+  width: 150px;
+  border-radius: 8px;
+  margin-left: 45px;
+  font-family: "Press Start 2P", sans-serif;
+}
+.guess-check button:hover {
+  color: white;
+  background-color: #333;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #eee;
+  transition: 0.5s;
+}
+
+.infos {
+  color: white;
+  position: absolute;
+  left: 60%;
+  top: 56%;
+}
+.infos .result {
+  padding-bottom: 30px;
+}
+.infos .score-section {
+  display: flex;
+  padding-top: 20px;
+}
+.infos .score {
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.infos .highscore-section {
+  display: flex;
+}
+.highscore {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 10px;
+  }
+  .play-btn {
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    font-size: 10px;
+    font-family: "Press Start 2P", sans-serif;
+    border-style: solid;
+    border-color: #eee;
+    margin-right: 30px;
+  }
+
+  .number-range {
+    font-size: 10px;
+    color: white;
+  }
+
+  .my-number {
+    color: white;
+    text-align: center;
+    font-size: 0.4rem;
+    padding-bottom: 2rem;
+  }
+
+  .middle {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .number {
+    font-family: "Press Start 2P", sans-serif;
+    background: #eee;
+    color: #333;
+    font-size: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 2.5rem;
+  }
+
+  .guess-check {
+    padding-left: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .guess-check input {
+    height: 60px;
+    width: 100px;
+    background-color: #222;
+    border-style: solid;
+    border-width: 5px;
+    color: #eee;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .guess-check button {
+    height: 35px;
+    font-size: 10px;
+    margin-right: 46px;
+    width: 75px;
+    border-radius: 8px;
+    font-family: "Press Start 2P", sans-serif;
+  }
+
+  .infos {
+    padding-top: 120px;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+  }
+
+  .infos .result {
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+  .infos .score-section {
+    display: flex;
+    padding-top: 20px;
+    font-size: 10px;
+  }
+  .infos .score {
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+  .infos .highscore-section {
+    font-size: 10px;
+    display: flex;
+  }
+  .highscore {
+    padding-left: 20px;
+  }
+}
